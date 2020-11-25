@@ -1,0 +1,24 @@
+<div class="jumbotron mt-.5">
+    <h1 class="display-5">
+        Smart Parking
+    </h1>
+    <p class="lead">Estacionamientos afiliados</p>
+    <div class="container-fluid" id="map-template"></div>
+     <script src="/js/main.js"></script>
+     {{#each notes}}
+
+                        <script>
+
+                             L.marker( [{{description}}], {icon: parkIcon} ).addTo(map)
+                             .bindPopup('{{title}}');  
+                                   
+                        </script>
+
+                     {{/each}}
+    <hr class="my-4">
+    <p>Inicia sesión para más</p>
+    <a href="www.google.com" class="btn btn-primary btn-lg">WEB</a>
+    
+</div>
+    
+</div>
