@@ -96,7 +96,7 @@ client.on('message', function (topic, message) {
   })*/
 
 const exphbs = require('express-handlebars');
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 
 var sys = require('sys');
 var net = require('net');
